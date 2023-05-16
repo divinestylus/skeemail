@@ -1,2 +1,1 @@
-#### SkeeMail
-An Email Template Web App
+#### [SkeeMail]() - An Email Template Web App
