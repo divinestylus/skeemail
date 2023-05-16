@@ -1,0 +1,151 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #2a2a2a;
+    --white: #ffffff;
+    --grey: #ededed;
+    --blue: #3581B8;
+    --brown: #FCB07E;
+    --rose-taupe: #885A5A;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin: 0 auto -0.2rem auto;
+    width: 85%;
+}
+
+p {
+    line-height: 1.3rem;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+}
+
+
+/* Hero Section */
+.hero-section {
+    height: 90vh;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--brown);
+}
+
+.hero-section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section nav div {
+    display: none;
+}
+
+.hero-text {
+    margin-top: 5rem;
+}
+
+.hero-text p {
+    margin: 0 0 2.5rem 0;
+}
+
+
+/* Benefit Section */
+.benefit-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.benefit-section div {
+    padding: 3rem 0;
+}
+
+.benefit-section img {
+    width: 100px;
+}
+
+
+/* Features Section */
+.features-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 2rem;
+    background-color: var(--grey);
+}
+
+
+/* Templates Section */
+.templates-section {
+    padding: 4rem 2rem;
+}
+
+.templates-section nav {
+    display: flex;
+    overflow: scroll;
+    margin-top: 1.5rem;
+}
+
+.templates-section nav a {
+    padding: 0.8rem 2rem;
+    line-height: 1rem;
+    margin-right: 1rem;
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 3rem;
+}
+
+
+/* Platforms Section */
+.platforms-section {
+    background-color: var(--grey);
+    padding: 4rem 2rem;
+}
+
+
+/* Custom Template Section */
+.custom-template-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--rose-taupe);
+    color: var(--white);
+}
+
+.custom-template-section h1 {
+    margin: 0 auto 3rem auto;
+    width: 85%;
+    
+}
+
+.custom-template-section a {
+    background-color: var(--brown);
+    color: var(--rose-taupe);
+}
