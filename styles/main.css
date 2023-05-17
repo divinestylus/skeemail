@@ -5,7 +5,7 @@
 :root {
     --black: #353535;
     --white: #ffffff;
-    --grey: #ededed;
+    --grey: #f6f6f6;
     --blue: #276ea0;
     --deepblue: #17537e;
     --brown: #FCB07E;
@@ -76,7 +76,7 @@ input {
 }
 
 .hero-section nav img {
-    width: 160px;
+    width: 130px;
 }
 
 .hero-section nav div {
@@ -155,11 +155,19 @@ input {
 }
 
 .templates-grid {
-    display: grid;
-    grid-template-rows: 1fr;
+    display: flex;
+    overflow: scroll;
     margin-top: 3rem;
 }
 
+.templates-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.templates-grid img {
+    width: 100%;
+    margin-right: 2rem;
+}
 
 /* Platforms Section */
 .platforms-section {
@@ -167,6 +175,18 @@ input {
     padding: 4rem 2rem;
 }
 
+.platforms-logo {
+    border: 1px solid red;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.platforms-logo img {
+    width: 60px;
+    margin: 1.5rem;
+}
 
 /* Custom Template Section */
 .custom-template-section {
@@ -183,12 +203,12 @@ input {
 }
 
 .custom-template-section a {
-    background-color: var(--rose-taupe);
+    background-color: var(--blue);
     color: var(--white);
 }
 
 .custom-template-section a:hover {
-    background-color: var(--deep-rose-taupe);
+    background-color: var(--deepblue);
 }
 
 /* Footer Section */
@@ -199,6 +219,10 @@ input {
 
 .footer-section img {
     width: 160px;
+}
+
+.footer-section-b {
+    padding-top: 2rem;
 }
 
 .newsletter {
