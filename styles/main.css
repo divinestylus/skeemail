@@ -75,6 +75,10 @@ input {
     justify-content: space-between;
 }
 
+.hero-section nav img {
+    width: 160px;
+}
+
 .hero-section nav div {
     display: none;
 }
@@ -191,6 +195,10 @@ input {
 .footer-section {
     padding: 4rem 2rem;
     text-align: center
+}
+
+.footer-section img {
+    width: 160px;
 }
 
 .newsletter {
