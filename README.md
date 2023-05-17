@@ -1,5 +1,5 @@
 ![SkeeMail Logo](./assets/skeemail-logo_color.svg)
-#### [SkeeMail]() - An Email Template Web App
+#### [SkeeMail](https://github.com/divinestylus/skeemail/blob/main/README.md) - An Email Template Web App
 
 <hr>
 
