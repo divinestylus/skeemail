@@ -1,3 +1,4 @@
+/* Global Styling */
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -13,13 +14,17 @@
     --deep-rose-taupe: #6f4444;
 }
 
-
 body {
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
     font-family: 'Kanit', sans-serif;
     color: var(--black);
+    text-align: center;
+}
+
+section, footer {
+    padding: 4rem 2rem;
 }
 
 h1 {
@@ -30,16 +35,18 @@ h1 {
 h2 {
     font-weight: 600;
     line-height: 1.6rem;
-    margin: 0 auto -0.2rem auto;
+    margin: 0 auto 1rem auto;
     width: 85%;
 }
 
 p {
     line-height: 1.3rem;
     font-weight: 300;
+    margin: 0 0 2rem 0
 }
 
 a {
+    display: block;
     text-decoration: none;
     background-color: var(--blue);
     color: var(--white);
@@ -56,15 +63,15 @@ a:hover {
 i {
     color: var(--white);
 }
+
 input {
     outline: none;
 }
 
+
 /* Hero Section */
 .hero-section {
-    height: 90vh;
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem 2rem 0 2rem;
     background-color: var(--black);
     color: var(--white);
 }
@@ -84,7 +91,7 @@ input {
 }
 
 .hero-text {
-    margin-top: 5rem;
+    margin: 5rem 0 0 0;
 }
 
 .hero-text h1 {
@@ -95,13 +102,16 @@ input {
     margin: 0 0 2.5rem 0;
 }
 
+.hero-text img {
+    width: 100%;
+    margin: 5rem 0 -0.399rem 0;
+}
+
 
 /* Benefit Section */
 .benefit-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 4rem 2rem;
 }
 
 .benefit-section div {
@@ -119,23 +129,17 @@ input {
 .features-section {
     display: flex;
     flex-direction: column-reverse;
-    padding: 4rem 2rem;
     background-color: var(--grey);
-    text-align: c;
+    text-align: left;
 }
 
 .features-section ul li::marker {
-    content: "✔";
+    content: "✔  ";
     color: var(--blue);
 }
 
 
 /* Templates Section */
-.templates-section {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
 .templates-section nav {
     display: flex;
     overflow: scroll;
@@ -165,21 +169,17 @@ input {
 }
 
 .templates-grid img {
-    width: 100%;
     margin-right: 2rem;
 }
+
 
 /* Platforms Section */
 .platforms-section {
     background-color: var(--grey);
-    padding: 4rem 2rem;
 }
 
 .platforms-logo {
-    border: 1px solid red;
     display: grid;
-    align-items: center;
-    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -188,18 +188,17 @@ input {
     margin: 1.5rem;
 }
 
+
 /* Custom Template Section */
 .custom-template-section {
-    text-align: center;
-    padding: 4rem 2rem 4.5rem 2rem;
     background-color: var(--brown);
     color: var(--white);
 }
 
 .custom-template-section h1 {
-    margin: 0 auto 3rem auto;
-    width: 85%;
-    
+    margin: 0 auto 2rem auto;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 .custom-template-section a {
@@ -211,11 +210,8 @@ input {
     background-color: var(--deepblue);
 }
 
+
 /* Footer Section */
-.footer-section {
-    padding: 4rem 2rem;
-    text-align: center
-}
 
 .footer-section img {
     width: 160px;
@@ -256,6 +252,10 @@ input {
 
 .social-media a i {
     color: var(--black);
-    font-size: 2rem;
-    
+    font-size: 2rem; 
+}
+
+.social-media a i:hover {
+    color: var(--blue);
+    transition: 0.5s;
 }
