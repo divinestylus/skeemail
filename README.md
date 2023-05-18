@@ -1,4 +1,4 @@
-![SkeeMail Logo](./assets/skeemail-logo_color.svg)
+![SkeeMail Logo](./assets/skeemail-readme-logo.svg)
 #### [SkeeMail](https://github.com/divinestylus/skeemail/blob/main/README.md) - An Email Template Web App
 
 <hr>
