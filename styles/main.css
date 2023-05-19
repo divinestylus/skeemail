@@ -17,6 +17,7 @@
 body {
     margin: 0;
     padding: 0;
+    hyphens: auto;
     font-size: 1.1rem;
     font-family: 'Kanit', sans-serif;
     color: var(--black);
@@ -36,7 +37,7 @@ h2 {
     font-weight: 600;
     line-height: 1.6rem;
     margin: 0 auto 1rem auto;
-    width: 85%;
+    inline-size: 85%;
 }
 
 p {
@@ -46,12 +47,12 @@ p {
 }
 
 a {
-    display: block;
     text-decoration: none;
     background-color: var(--blue);
     color: var(--white);
     border-radius: 50px;
     padding: 0.5rem 2rem;
+    line-height: 1.5rem;
 }
 
 a:hover {
@@ -62,10 +63,20 @@ a:hover {
 
 i {
     color: var(--white);
+    cursor: pointer;
 }
 
 input {
     outline: none;
+}
+
+input::placeholder {
+    font-family: 'Kanit', sans-serif;
+}
+
+.active-state {
+    background-color: var(--blue)!important;
+    color: var(--white)!important;
 }
 
 
@@ -83,7 +94,7 @@ input {
 }
 
 .hero-section nav img {
-    width: 130px;
+    inline-size: 130px;
 }
 
 .hero-section nav div {
@@ -103,7 +114,7 @@ input {
 }
 
 .hero-text img {
-    width: 100%;
+    inline-size: 100%;
     margin: 5rem 0 -0.399rem 0;
 }
 
@@ -119,7 +130,7 @@ input {
 }
 
 .benefit-section svg {
-    width: 75px;
+    inline-size: 75px;
     margin: 0 0 0.5rem 0;
     fill: var(--blue);
 }
@@ -130,7 +141,7 @@ input {
     display: flex;
     flex-direction: column-reverse;
     background-color: var(--grey);
-    text-align: left;
+    text-align: start;
 }
 
 .features-section ul li::marker {
@@ -143,7 +154,7 @@ input {
 .templates-section nav {
     display: flex;
     overflow: scroll;
-    margin-top: 1.5rem;
+    margin-block-start: 1.5rem;
 }
 
 .templates-section nav::-webkit-scrollbar {
@@ -153,7 +164,7 @@ input {
 .templates-section nav a {
     padding: 0.8rem 2rem;
     line-height: 1rem;
-    margin-right: 1rem;
+    margin-inline-end: 1rem;
     background-color: var(--grey);
     color: var(--black);
 }
@@ -161,16 +172,45 @@ input {
 .templates-grid {
     display: flex;
     overflow: scroll;
-    margin-top: 3rem;
+    margin-block-start: 3rem;
 }
 
 .templates-grid::-webkit-scrollbar {
     display: none;
 }
 
-.templates-grid img {
-    margin-right: 2rem;
+.preview-button a {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    inline-size: fit-content;
+    transition: 0.6s ease-in-out;
+    z-index: 1;
 }
+
+.templates-grid div{
+    margin-inline-end: 2rem;
+    position: relative;
+    inline-size: 100%;
+}
+
+.templates-grid div img {
+    border-radius: 24px;
+}
+
+.templates-grid div img:hover {
+    filter: blur(1px) brightness(80%);
+    transition: 0.6s ease-in-out;
+}
+
+.templates-grid div img:hover + .preview-button a {
+   display: block;
+}
+
 
 
 /* Platforms Section */
@@ -180,11 +220,12 @@ input {
 
 .platforms-logo {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .platforms-logo img {
-    width: 60px;
+    inline-size: 60px;
     margin: 1.5rem;
 }
 
@@ -214,7 +255,8 @@ input {
 /* Footer Section */
 
 .footer-section img {
-    width: 160px;
+    inline-size: 160px;
+    margin-block-end: 1.2rem;
 }
 
 .footer-section-b {
@@ -226,23 +268,22 @@ input {
 }
 
 .newsletter-field input {
-    width: 100%;
+    inline-size: 100%;
     padding: 0.8rem 1rem;
     border-radius: 50px;
     border: 0;
     background-color: var(--grey);
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
 }
 
 .newsletter-field a {
     display: block;
-    width: 100%;
+    inline-size: 100%;
 }
 
 .social-media {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    place-content: center;
 }
 
 .social-media a {
