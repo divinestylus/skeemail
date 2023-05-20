@@ -119,6 +119,7 @@ input::placeholder {
     transition: 0.6s ease-in-out;
 }
 
+
 .hero-section nav:last-of-type {
     display: flex;
     align-items: center;
