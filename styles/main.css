@@ -125,7 +125,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     background-color: var(--black);
     position: relative;
     z-index: 2;
@@ -155,7 +155,7 @@ input::placeholder {
 
 .hero-text img {
     inline-size: 100%;
-    margin: 5rem 0 -0.3rem 0;
+    margin: 5rem 0 -0.45rem 0;
 }
 
 
@@ -209,6 +209,7 @@ input::placeholder {
 .templates-section nav a {
     padding: 0.8rem 2rem;
     line-height: 1rem;
+    width: fit-content;
     margin-inline-end: 1rem;
     background-color: var(--grey);
     color: var(--black);
