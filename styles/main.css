@@ -60,9 +60,17 @@ a:hover {
 
 }
 
+a:focus {
+    box-shadow: none;
+}
+
 i {
     color: var(--white);
     cursor: pointer;
+}
+
+i:focus {
+    box-shadow: none;
 }
 
 input {
