@@ -29,7 +29,7 @@ section, footer {
 }
 
 h1 {
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     font-weight: 600;
 }
 
@@ -82,7 +82,7 @@ input::placeholder {
 
 /* Hero Section */
 .hero-section {
-    background-color: var(--rose-taupe);
+    background-color: var(--black);
     color: var(--white);
 }
 
@@ -93,6 +93,7 @@ input::placeholder {
     position:absolute;
     inset: 0;
     z-index: 1;
+    border-bottom: 1px solid var(--white);
     height: 270px;
     background-color: var(--black);
     transform: translateY(-270px);
@@ -154,7 +155,7 @@ input::placeholder {
 
 .hero-text img {
     inline-size: 100%;
-    margin: 5rem 0 -0.46rem 0;
+    margin: 5rem 0 -0.3rem 0;
 }
 
 
@@ -186,6 +187,11 @@ input::placeholder {
 .features-section ul li::marker {
     content: "✔  ";
     color: var(--blue);
+}
+
+.features-section img {
+    width: 100%;
+    margin: 0 auto;
 }
 
 
