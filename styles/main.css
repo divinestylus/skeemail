@@ -82,27 +82,66 @@ input::placeholder {
 
 /* Hero Section */
 .hero-section {
-    padding: 2rem 2rem 0 2rem;
-    background-color: var(--black);
+    background-color: var(--rose-taupe);
     color: var(--white);
 }
 
-.hero-section nav {
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position:absolute;
+    inset: 0;
+    z-index: 1;
+    height: 270px;
+    background-color: var(--black);
+    transform: translateY(-270px);
+    transition: 0.6s;
+    width: 100%;
+}
+
+.mobile-menu a {
+    display: block;
+    text-align: start;
+    background-color: var(--black);
+    border-radius: 0;
+}
+
+.mobile-menu a:hover {
+    background-color: var(--blue);
+}
+
+.mobile-menu a:last-child {
+    margin-block-end: 2rem;
+}
+
+.showMenu {
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
+.hero-section nav:last-of-type {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--black);
+    position: relative;
+    z-index: 2;
 }
 
-.hero-section nav img {
+.hero-section nav:last-of-type img {
     inline-size: 130px;
 }
 
-.hero-section nav div {
+
+.desktop-menu {
     display: none;
 }
 
 .hero-text {
-    margin: 5rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
+    margin: 0;
 }
 
 .hero-text h1 {
@@ -115,7 +154,7 @@ input::placeholder {
 
 .hero-text img {
     inline-size: 100%;
-    margin: 5rem 0 -0.399rem 0;
+    margin: 5rem 0 -0.46rem 0;
 }
 
 
