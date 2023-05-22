@@ -124,7 +124,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    padding: 2rem;
     background-color: var(--black);
     position: relative;
     z-index: 2;
