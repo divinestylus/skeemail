@@ -160,8 +160,9 @@ input::placeholder {
 
 /* Benefit Section */
 .benefit-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
 }
 
 .benefit-section div {
@@ -170,7 +171,6 @@ input::placeholder {
 
 .benefit-section svg {
     inline-size: 75px;
-    margin: 0 0 0.5rem 0;
     fill: var(--blue);
 }
 
@@ -181,6 +181,11 @@ input::placeholder {
     flex-direction: column-reverse;
     background-color: var(--grey);
     text-align: start;
+}
+
+.features-section ul {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .features-section ul li::marker {
@@ -195,22 +200,31 @@ input::placeholder {
 
 
 /* Templates Section */
-.templates-section nav {
+.templates-section {
+    position: relative;
+}
+
+.slider-button {
     display: flex;
-    overflow: scroll;
-    margin-block-start: 1.5rem;
+    width: 100%;    
+    justify-content: space-between;
+    position: absolute;
+    padding-inline: 1rem;
+    top: 30rem;
+    left: 0;
+    right: 0;
 }
 
-.templates-section nav::-webkit-scrollbar {
-    display: none;
+.fa-arrow-left, .fa-arrow-right {
+    background-color: var(--blue);  
+    padding: 1rem;
+    border: 1px solid var(--white);
+    border-radius: 50px;
 }
 
-.templates-section nav a {
-    padding: 0.8rem 2rem;
-    line-height: 1rem;
-    margin-inline-end: 1rem;
-    background-color: var(--grey);
-    color: var(--black);
+.fa-arrow-left:hover, .fa-arrow-right:hover {
+    background-color: var(--deepblue);
+    transition: 0.6s ease-in-out;
 }
 
 .templates-grid {
@@ -225,34 +239,17 @@ input::placeholder {
     display: none;
 }
 
-.preview-button a {
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    inline-size: fit-content;
-    transition: 0.6s ease-in-out;
-    z-index: 1;
-}
-
 .templates-grid div{
     margin-inline-end: 2rem;
     position: relative;
+    z-index: -1;
     inline-size: 100%;
 }
 
 .templates-grid div img:hover {
-    filter: blur(1px) brightness(80%);
+    filter: brightness(80%);
     transition: 0.6s ease-in-out;
 }
-
-.templates-grid div img:hover + .preview-button a {
-   display: block;
-}
-
 
 
 /* Platforms Section */
